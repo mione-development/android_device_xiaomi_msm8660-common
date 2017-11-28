@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.broadcastradio@1.0-impl \
+    android.hardware.soundtrigger@2.0-impl \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -51,23 +55,43 @@ PRODUCT_PACKAGES += \
     libdashplayer \
     libaudio-resampler
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8660 \
+    camera.device@1.0-impl-legacy \
+    android.hardware.camera.provider@2.4-impl-legacy
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.mione
 
 # Graphics
 PRODUCT_PACKAGES += \
-    camera.msm8660 \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
     copybit.msm8660 \
     gralloc.msm8660 \
     hwcomposer.msm8660 \
     memtrack.msm8660 \
-    lights.msm8660 \
     libgenlock \
     libmemalloc \
     liboverlay \
     libqdutils \
     libtilerenderer
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
+
+# Light
+PRODUCT_PACKAGES += \
+    lights.msm8660 \
+    android.hardware.light@2.0-impl
 
 # Qcom
 PRODUCT_PACKAGES += \
@@ -87,7 +111,9 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxEvrcEnc \
     libOmxAmrEnc \
-    qcmediaplayer
+    qcmediaplayer \
+    android.hardware.drm@1.0-impl
+
 
 PRODUCT_BOOT_JARS += \
     qcmediaplayer
@@ -122,6 +148,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     dhcpcd.conf \
     hostapd \
     hostapd_default.conf \
@@ -131,6 +158,39 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     bt_vendor.conf
+
+
+# Bluetooth HAL
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
+
+# GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl
+
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
+# Sensor
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
+# Thermal HAL
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
+
+# USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
 
 # Media configuration
 PRODUCT_COPY_FILES += \
