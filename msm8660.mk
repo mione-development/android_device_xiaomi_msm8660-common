@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     hostapd_default.conf \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    wificond
 
 # Bluetooth
 PRODUCT_PACKAGES += \
