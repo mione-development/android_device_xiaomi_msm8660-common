@@ -85,10 +85,10 @@ BOARD_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 BOARD_USES_LEGACY_MMAP := true
 
 # SELinux
--include device/qcom/sepolicy/sepolicy.mk
+# include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    $(COMMON_PATH)/sepolicy
 
 # Filesystem
 #BOARD_VOLD_MAX_PARTITIONS := 36
