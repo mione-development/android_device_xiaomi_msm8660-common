@@ -92,10 +92,6 @@ PRODUCT_PACKAGES += \
     lights.msm8660 \
     android.hardware.light@2.0-impl
 
-# Qcom
-PRODUCT_PACKAGES += \
-    libstlport
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
