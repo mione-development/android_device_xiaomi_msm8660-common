@@ -47,7 +47,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio_policy.msm8660 \
     audio.primary.msm8660 \
-    audio_policy.conf \
     libaudioutils \
     libdashplayer \
     libaudio-resampler
@@ -140,10 +139,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     device/xiaomi/msm8660-common/configs/media_codecs.xml:system/etc/media_codecs.xml \
     device/xiaomi/msm8660-common/configs/media_profiles.xml:system/etc/media_profiles.xml
-
-# audio policy
-PRODUCT_COPY_FILES += \
-    device/xiaomi/msm8660-common/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # MSM8660 firmware
 PRODUCT_COPY_FILES += \
