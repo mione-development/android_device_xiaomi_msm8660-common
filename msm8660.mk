@@ -184,6 +184,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensor
 PRODUCT_PACKAGES += \
+    sensors.msm8660 \
     android.hardware.sensors@1.0-impl
 
 # Thermal HAL
