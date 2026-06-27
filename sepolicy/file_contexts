@@ -30,6 +30,10 @@
 
 /dev/oncrpc/.*                                         u:object_r:oncrpc_device:s0
 
+/system/bin/netmgrd                                   u:object_r:netmgrd_exec:s0
+/system/bin/qmuxd                                     u:object_r:qmuxd_exec:s0
+/system/bin/mm-qcamera-daemon                         u:object_r:mm-qcamerad_exec:s0
+
 # Mpdecision
 /data/system/default_values                            u:object_r:mpctl_data_file:s0
 /dev/socket/mpctl                                      u:object_r:mpctl_socket:s0
