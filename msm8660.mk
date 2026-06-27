@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
-    audio_policy.msm8660 \
     audio.primary.msm8660 \
     libaudioutils \
     libdashplayer \
@@ -203,6 +202,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+    device/xiaomi/msm8660-common/configs/audio_policy.conf:system/etc/audio_policy.conf \
     device/xiaomi/msm8660-common/configs/media_codecs.xml:system/etc/media_codecs.xml \
     device/xiaomi/msm8660-common/configs/media_profiles.xml:system/etc/media_profiles.xml
 
