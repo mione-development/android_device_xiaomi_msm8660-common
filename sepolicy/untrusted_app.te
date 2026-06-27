@@ -7,5 +7,4 @@ allow untrusted_app bluetooth_data_file:dir { getattr search };
 allow untrusted_app bluetooth_data_file:lnk_file read;
 allow untrusted_app radio_data_file:dir { getattr search };
 allow untrusted_app radio_data_file:lnk_file read;
-allow untrusted_app debuggerd_exec:file { read getattr };
 allow untrusted_app sysfs_thermal:dir search;

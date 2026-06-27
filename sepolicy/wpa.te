@@ -1,1 +1,2 @@
-allow wpa rfkill_device:chr_file rw_file_perms;
+# Android 8.1 uses the Wi-Fi supplicant HAL domain instead of the old wpa domain.
+allow hal_wifi_supplicant rfkill_device:chr_file rw_file_perms;
